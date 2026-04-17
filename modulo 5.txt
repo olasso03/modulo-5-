@@ -1,0 +1,43 @@
+Descripción
+
+Aplicación de línea de comandos desarrollada en Python para gestionar una biblioteca personal.
+
+Permite registrar, consultar, actualizar, buscar y eliminar libros, almacenando la información en KeyDB, un sistema de almacenamiento en memoria compatible con Redis. Cada libro se guarda como un objeto serializado en JSON asociado a una clave única.
+
+Objetivo del proyecto.
+
+Modificar una aplicación de biblioteca personal que originalmente utilizaba MongoDB, reemplazando ese sistema por KeyDB para gestionar los datos mediante operaciones rápidas y eficientes usando la librería redis-py.
+
+ Funcionalidades
+
+La aplicación permite:
+
+Agregar nuevos libros indicando:
+título
+autor
+género
+estado de lectura
+Ver el listado completo de libros registrados
+Buscar libros por:
+título
+autor
+género
+Actualizar la información de un libro existente
+Eliminar libros
+Salir del sistema de forma segura
+
+Tecnologías utilizadas
+
+- Python 3
+- KeyDB
+- redis-py
+- python-dotenv
+- JSON
+
+---
+
+##  Estructura de almacenamiento
+
+Cada libro se almacena como un valor JSON en KeyDB.
+
+### Clave
